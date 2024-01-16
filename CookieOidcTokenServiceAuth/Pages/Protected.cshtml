@@ -1,0 +1,25 @@
+﻿@page
+@using Microsoft.AspNetCore.Authentication
+@model CookieOidcTokenServiceAuth.Pages.Protected
+
+<h2>Claims</h2>
+
+<dl>
+    @foreach (var claim in User.Claims)
+    {
+        <dt>@claim.Type</dt>
+        <dt>@claim.Value</dt>
+    }
+</dl>
+
+<h2>Properties</h2>
+
+<dl>
+    @foreach (var property in (await HttpContext.AuthenticateAsync()).Properties.Items)
+    {
+        <dt>@property.Key</dt>
+        <dt>@property.Value</dt>
+    }
+</dl>
+
+<a href="/signout">Sign out</a>

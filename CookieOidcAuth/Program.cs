@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,10 +12,7 @@ services.AddAuthentication(options =>
         options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
         options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     })
-    .AddCookie(options =>
-    {
-        options.LoginPath = "/login";
-    })
+    .AddCookie(options => { options.LoginPath = "/login"; })
     .AddOpenIdConnect(options =>
     {
         // options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
