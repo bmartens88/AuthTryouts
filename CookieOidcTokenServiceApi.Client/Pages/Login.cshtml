@@ -1,0 +1,15 @@
+﻿@page
+@model CookieOidcTokenServiceApi.Client.Pages.Login
+
+<form method="post">
+    <input type="hidden" asp-for="LoginModel.ReturnUrl">
+    <label for="username" class="form-label">Username:</label>
+    <input type="text" class="form-control" placeholder="Username" id="username" asp-for="LoginModel!.Username"/>
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="password" asp-for="LoginModel!.Password">
+    <input type="submit" class="btn btn-primary" value="Login"/>
+</form>
+
+<form method="post">
+    <input type="submit" asp-route-returnUrl="@Model.ReturnUrl" asp-page-handler="Oidc" class="btn btn-secondary" value="Oidc"/>
+</form>

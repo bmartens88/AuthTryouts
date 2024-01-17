@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieOidcAuth", "CookieOid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieOidcTokenServiceAuth", "CookieOidcTokenServiceAuth\CookieOidcTokenServiceAuth.csproj", "{C8E85682-AEB2-4825-BE90-63710AF696A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieOidcTokenServiceApi.Client", "CookieOidcTokenServiceApi.Client\CookieOidcTokenServiceApi.Client.csproj", "{A07CA133-0B94-4844-B878-E744278E074F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieOidcTokenServiceApi.Api", "CookieOidcTokenServiceApi.Api\CookieOidcTokenServiceApi.Api.csproj", "{4B4CB6E2-DB55-45D8-9BE3-3C2E4A343D82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{C8E85682-AEB2-4825-BE90-63710AF696A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8E85682-AEB2-4825-BE90-63710AF696A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8E85682-AEB2-4825-BE90-63710AF696A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07CA133-0B94-4844-B878-E744278E074F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07CA133-0B94-4844-B878-E744278E074F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07CA133-0B94-4844-B878-E744278E074F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07CA133-0B94-4844-B878-E744278E074F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4CB6E2-DB55-45D8-9BE3-3C2E4A343D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4CB6E2-DB55-45D8-9BE3-3C2E4A343D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4CB6E2-DB55-45D8-9BE3-3C2E4A343D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4CB6E2-DB55-45D8-9BE3-3C2E4A343D82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
